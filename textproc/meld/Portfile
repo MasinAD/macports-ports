@@ -6,7 +6,7 @@ PortGroup               app 1.0
 PortGroup               active_variants 1.1
 
 name                    meld
-version                 3.18.1
+version                 3.20.2
 revision                1
 categories              textproc devel
 license                 GPL-2+
@@ -25,10 +25,9 @@ long_description        Meld is a visual diff and merge tool. You can compare \
 master_sites            gnome:sources/${name}/[join [lrange [split $version .] 0 1] .]
 use_xz                  yes
 
-checksums               rmd160  92e0d17b0b60843a8f7de72d4923a5287e76489e \
-                        sha256  3af68caeab5f38e82de66567346722db47ed6a6fa6d9d595de4ae7e15c88e879 \
-                        size    563516
-
+checksums               rmd160  95e46ba77c4ee894dc2f2bd8e7287f00e586d0d2 \
+                        sha256  ac0985f986ca44c25927ca31ac4d75b60f1f5f1a9e439bc1f3828ffc4d091d28 \
+                        size    593948
 python.default_version  36
 
 # see #55092
@@ -65,7 +64,7 @@ variant help description {Meld user manual (requires yelp)} {
     }
 }
 
-app.icon                data/icons/hicolor/scalable/apps/meld.svg
+app.icon                data/icons/hicolor/scalable/apps/org.gnome.meld.svg
 app.use_launch_script   yes
 
 variant x11 conflicts quartz {
